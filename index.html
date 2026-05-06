@@ -24,29 +24,59 @@
         <article>
             Desenvolvedora de sistemas
         </article>
-        <aside>
-        <h2>Habilidades</h2>
-        <ul>
-            <li>SQL</li>
-            <li>PHP</li>
-            <li>Laravel</li>
-            <li>PL/SQL</li>
-            <li>Oracle</li>
-            <li>MySql</li>
-            <li>Postgres</li>
-            <li>Oracle Forms</li>
-            <li>Oracle Reports</li>
-            <li>IReports</li>
-            <li>SVN</li>
-            <li>GitHub</li>
-            <li>Javascript</li>
-            <li>Vite</li>
-            <li>Node</li>
-            <li>Sql Tunning</li>
-            <li>Performance Tunning</li>
-            <li>Migração de dados</li>
-        </ul>
-    </aside>
+        <table>
+            <thead>
+                <th>Tecnologia</th>
+                <th>Nível</th>
+                <th>Descrição</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Html</td>
+                    <th>Avançado</th>
+                    <th>Capaz de construir estruturas de páginas web semanticas e responsivas</th>
+                </tr>
+                <tr>
+                    <td>Css</td>
+                    <th>Avançado</th>
+                    <th>Experiência com flexbox, grids e animações Css</th>
+                </tr>
+
+                <tr>
+                    <td>Javascript</td>
+                    <th>Inermediário</th>
+                    <th>Desenvolvimento de scripts do lado do cliente para interações</th>
+                </tr>
+            </tbody>
+            <tfoot>
+                Direitos reservados a Alice
+            </tfoot>
+        </table>
+        <!--
+            <aside>
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>SQL</li>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>PL/SQL</li>
+                    <li>Oracle</li>
+                    <li>MySql</li>
+                    <li>Postgres</li>
+                    <li>Oracle Forms</li>
+                    <li>Oracle Reports</li>
+                    <li>IReports</li>
+                    <li>SVN</li>
+                    <li>GitHub</li>
+                    <li>Javascript</li>
+                    <li>Vite</li>
+                    <li>Node</li>
+                    <li>Sql Tunning</li>
+                    <li>Performance Tunning</li>
+                    <li>Migração de dados</li>
+                </ul>
+            </aside>
+        -->
     </section>
     
     <section id="projeto">
@@ -59,6 +89,33 @@
             Contato
         </h2>
         <p>Entre em contato</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required><br>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone"><br>
+
+            <label for="assunto">Assunto</label>
+            <select name="assunto" id="assunto">
+                <option value="orcamento">Orçamento</option>
+                <option value="duvida">Duvida</option>
+                <option value="orcamento">Outro</option>
+            </select><br>
+            
+
+            <label for="menssagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" cols="20" rows="5" required></textarea><br>
+
+            <input type="checkbox" id="inscricao" name="inscricao">
+            <label for="inscricao">Deseja receber newsletter?</label><br>
+
+            <input type="submit" value="Enviar Mensagem"><br>
+            <br>
+        </form>
         <address>
             Email: <a href="mailto:alice@inf.ufsc.br">alice@inf.ufsc.br</a>
             Telefone <a href="tel:+5548985555555">+55 48 985555555</a>
